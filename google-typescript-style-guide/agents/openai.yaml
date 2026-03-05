@@ -1,0 +1,4 @@
+interface:
+  display_name: "Google TypeScript Style Guide"
+  short_description: "Review and fix TypeScript to Google style"
+  default_prompt: "Use $google-typescript-style-guide to review this TypeScript change for Google style guide issues and propose a minimal-diff fix."

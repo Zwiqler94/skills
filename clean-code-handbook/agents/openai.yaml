@@ -1,0 +1,4 @@
+interface:
+  display_name: "Clean Code Handbook"
+  short_description: "Clean code reviews and minimal-diff refactors"
+  default_prompt: "Use $clean-code-handbook to review this code for clean-code issues and propose a minimal-diff improvement plan or patch."
