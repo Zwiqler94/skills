@@ -1,0 +1,4 @@
+interface:
+  display_name: "ArcGIS Doc Lookup"
+  short_description: "Find official ArcGIS docs with implementation takeaways"
+  default_prompt: "Use $arcgis-doc-lookup to return official ArcGIS documentation links with concise implementation notes and version context for this question."
