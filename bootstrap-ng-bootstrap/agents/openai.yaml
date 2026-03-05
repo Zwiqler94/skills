@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bootstrap + ng-bootstrap"
+  short_description: "Apply Bootstrap 5 + ng-bootstrap patterns for Angular"
+  default_prompt: "Use $bootstrap-ng-bootstrap to implement or review this Angular UI change with Bootstrap utilities, ng-bootstrap interactivity, and repo compatibility/accessibility rules."
