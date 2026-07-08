@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prompt Helper"
+  short_description: "Scope and route Codex coding work"
+  default_prompt: "Use $prompt-helper to keep this coding task scoped, verified, and routed to the right docs, memory, or subagents when appropriate."

@@ -17,6 +17,7 @@ Each skill lives in its own folder and is centered around a `SKILL.md` file.
 - `bootstrap-ng-bootstrap`
 - `clean-code-handbook`
 - `google-typescript-style-guide`
+- `prompt-helper`
 
 ## Adding a new skill
 
