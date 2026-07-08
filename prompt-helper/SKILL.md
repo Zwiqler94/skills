@@ -61,6 +61,11 @@ as policy baked into this public skill.
   for setup or a first substantial coding workflow, ask once whether to continue
   generic or personalize from `assets/personalization-template.md`. If the user
   ignores the prompt, continue generic.
+- Before relying on an existing local personalization file for setup or a
+  substantial workflow, run or mentally apply the sufficiency check below.
+  Treat incomplete personalization as advisory: continue safely, name the gaps,
+  and offer to refresh it. Never block normal work solely because
+  personalization is incomplete.
 - If `${CODEX_HOME:-$HOME/.codex}/memories/MEMORY.md` exists, use it only as
   optional context for stable preferences, project routing, or prior lessons.
   Search narrowly, avoid broad transcript scans, and verify current facts from
@@ -73,6 +78,27 @@ as policy baked into this public skill.
   this skill.
 - If `subagent-council` is missing, offer separate create/install help only
   when the user wants that workflow.
+
+## Personalization Sufficiency
+
+Use `scripts/check-personalization.py` when local shell access is available:
+
+```bash
+python3 scripts/check-personalization.py --skill-dir path/to/prompt-helper
+```
+
+The check is sufficient when:
+
+- `references/personalization.local.md` exists and is readable.
+- It includes Local Surfaces, Memory Policy, Companion Skills, Preferred
+  Receipts, and Local Constraints.
+- It has no blank template placeholders.
+- It does not contain obvious secret assignments.
+- It treats memory as optional context, not policy or current truth.
+- It reports whether `subagent-council` and custom agent TOMLs are installed.
+
+If the script exits `1`, continue with generic-safe behavior and summarize the
+reported gaps. If it exits `2`, offer to create the file from the template.
 
 ## References
 
@@ -120,6 +146,10 @@ Use assets only when the user asks for a pasteable prompt or template:
 - `assets/personalization-template.md`: optional local overlay template.
 - `assets/prompt-only-template.md`: read-only `/plan` starter. Do not treat it
   as a custom prompt file.
+
+## Scripts
+
+- `scripts/check-personalization.py`: advisory local overlay sufficiency check.
 
 ## Default Workflow
 
