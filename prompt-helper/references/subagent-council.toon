@@ -1,0 +1,14 @@
+council_checks[5]{check,action}:
+  skill_present,"If a subagent-council skill exists, read its SKILL.md before routing council work."
+  agents_present,"If custom agent files exist, use that installed roster and its limits."
+  agents_missing,"If the skill exists but agent files are missing, offer a separate install or refresh step when useful."
+  skill_missing,"If no council skill exists, offer create or install help only when the user wants that workflow."
+  task_small,"For tiny obvious edits, stay single-agent."
+
+rules[6]{rule,detail}:
+  stay_boring,"Do not spawn subagents for tiny obvious tasks."
+  explicit_trigger,"Spawn subagents only when the user asks or approves."
+  first_wave_cap,"Use at most three first-wave subagents unless the user asks for broad review."
+  read_only_first,"Start read-only when owner files, scope, or behavior are unclear."
+  no_parallel_writes,"Do not run writing agents in parallel with reviewers unless explicitly approved."
+  consolidate,"Wait for requested agents and return decisions, evidence, and next steps, not raw logs."
