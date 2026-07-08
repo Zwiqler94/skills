@@ -19,6 +19,7 @@ skill. Keep it concise and avoid secrets.
 ## Companion Skills
 
 - `subagent-council`:
+- `subagent-council` custom agents:
 - Documentation skills:
 - Repo-specific skills:
 
@@ -33,3 +34,13 @@ skill. Keep it concise and avoid secrets.
 - Never assume:
 - Ask before:
 - Safe defaults:
+
+## Sufficiency Checklist
+
+- [ ] Local Surfaces names each Codex surface this install uses.
+- [ ] Memory Policy says when memory helps, when not to use it, and how to
+  verify drift-prone facts.
+- [ ] Companion Skills records whether `subagent-council` is installed and
+  whether custom agent TOMLs are installed under `${CODEX_HOME:-$HOME/.codex}`.
+- [ ] Preferred Receipts gives a concrete default receipt shape.
+- [ ] Local Constraints has no secrets and no public/global policy leakage.
