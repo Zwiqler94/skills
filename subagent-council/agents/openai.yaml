@@ -1,0 +1,4 @@
+interface:
+  display_name: "Subagent Council"
+  short_description: "Install and route dev subagents"
+  default_prompt: "Use $subagent-council to choose the smallest useful council for this personal-dev task."
